@@ -1,0 +1,100 @@
+---
+title: "Unit 2 Homework: Characterizing Random Variables"
+author: 'w203: Statistics for Data Science'
+output: pdf_document
+urlcolor: blue
+---
+
+\newcommand{\R}{\mathbb{R}}
+
+# Applied Practice 
+
+## 1. (9 points total) Processing Pasta 
+
+A certain manufacturing process creates pieces of pasta that vary by length.  
+Suppose that the length of a particular piece (represented as a random variable 
+$L$ that takes on values $l$), is a continuous random variable with the 
+following probability density function.
+
+$$
+f(l) = 
+  \begin{cases} 
+    0, &l \leq 0 \\
+    c \cdot l, &0 < l \leq 2 \\
+    0, &2 < l
+  \end{cases}, 
+$$
+where $c$ is a constant that makes $f(l)$ a valid probability distribution function. 
+
+a. (3 points) Compute the constant $c$. What value of $c$ makes $f(l)$ a valid pdf? 
+b. (1 point) What is the cumulative probability when $l \leq 0$? 
+c. (1 point) What is the cumulative probability function when $0 < l \leq 2$?
+d. (1 point) What is the cumulative probability function when $2 \leq l$? 
+c. (3 points) Compute the median value of $L$.  That is, compute $l$ such that $P(L \leq l ) = 1/2$. 
+
+# Proof Practice
+
+## 2. (12 points total) Broken Rulers
+
+You have a ruler of length 2 and you choose a place to break it using a uniform 
+probability distribution.  Let random variable $X$ represent the length of the 
+left piece of the ruler.  $X$ is distributed uniformly in $[0,2]$.  You take the
+left piece of the ruler and once again choose a place to break it using a 
+uniform probability distribution.  Let random variable $Y$ be the length of the 
+left piece from the second break.
+
+a. (3 points) Draw a picture of the region in the X-Y plane for which the joint density of $X$ and $Y$ is non-zero.
+
+b. (3 points) Compute the joint density function for $X$ and $Y$. (As always, make sure you write a complete expression.)
+
+c. (3 points) Compute the marginal probability density for $Y$, $f_Y(y)$.
+
+d. (3 points) Compute the conditional probability density of $X$, conditional on $Y=y$, $f_{X|Y}(x|y)$.  (Make sure you state the values of $y$ for which this exists.)
+
+\newpage
+
+## 3. (3 points total) (1 optional bonus point) Post-Processing and Independence
+
+What if you have two random variables, $X$ and $Y$ that are independent. What 
+happens if you apply a function, $f$, onto $X$? Is this newly transformed random 
+variable, $f(X)$ still independent of $Y$? 
+
+> This question is posed in a way that works for any random variable, with any 
+possible function from $\mathbb{R}$ to $\mathbb{R}$. A student with a strong 
+math background might choose to prove this for the general case; as a hint to 
+these students, our proof involves inverse images. 
+> 
+> For students who are building their math fundimentals, consider a 
+[proof by cases](http://www.cs.ecu.edu/karl/2427/spr13/proofs/cases.html) 
+for a particular type of random variable, a 
+[Bernoulli random variable](https://en.wikipedia.org/wiki/Bernoulli_distribution). 
+> 
+> That is, suppose $X$ and $Y$ are Bernoulli random variables that each take on 
+values \{0, 1\}. Furthermore, suppose that $f$ is a function that maps the input
+$0$ either onto $0$ or $1$, and it maps the input $1$ onto either $0$ or $1$. 
+That is, $f: \{0,1\} \to \{0,1\}$ is a function that can be applied to $X$. 
+
+(3 points) Either for the general, or for the Bernoulli special case, prove that
+if $X$ and $Y$ are independent then $f(X)$ and $Y$ are independent.
+
+(1 bonus point) Proving this for the general case requires more advanced math. 
+What is the payoff for this additional work? If you prove something for the 
+general case, does it apply to **all** special cases? If you prove something for
+a special case, does it apply to **all** general cases? (_upload this with your 
+work for "Post-Processing and Independence"_)
+
+# Optional Challenge Exercise
+
+## (3 bonus points) Characterizing a Function of a Random Variable
+
+Let $X$ be a continuous random variable with probability density function 
+$f(x)$, and let $h$ be an invertible function where $h^{-1}$ is differentiable. 
+Recall that $Y = h(X)$ is itself a continuous random variable.  
+
+(3 bonus points) Prove that the probability density function of $Y$ is
+
+$$
+g(y) = f(h^{-1}(y)) \cdot \left| \frac{d}{dy} h^{-1}(y) \right|
+$$
+
+*Note: The Homework Maximum is 100%*
