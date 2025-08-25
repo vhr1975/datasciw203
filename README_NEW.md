@@ -1,24 +1,22 @@
-# UC Berkeley Data Science W203: Statistics for Data Science
+# UC Berkeley Data Science W203 Portfolio
 
-This repository contains my coursework for UC Berkeley’s Data Science W203 (MIDS program). The course introduces foundational and advanced statistical concepts and practical skills for data science using R, RMarkdown, and essential data science libraries.
+## Course Overview
+This repository contains my coursework for UC Berkeley's Data Science W203: Statistics for Data Science. The course covers foundational and advanced topics in statistical inference, regression, and data analysis, with a focus on practical application using R and reproducible research practices.
 
-## Course Summary & Learning Objectives
-
-- Develop proficiency in statistical analysis for data science.
-- Apply regression, inference, and robust modeling techniques.
-- Work with data cleaning, transformation, and visualization in R.
-- Use RMarkdown for interactive analysis and reproducible reporting.
-- Practice best practices in code modularity, documentation, and reproducibility.
-- Gain experience with version control (Git/GitHub) and collaborative workflows.
+## Learning Objectives
+- Develop a strong understanding of statistical concepts and their application to real-world data.
+- Gain proficiency in R and RMarkdown for data analysis, visualization, and reporting.
+- Apply best practices in data cleaning, exploratory analysis, modeling, and communication of results.
+- Build a portfolio of reproducible, well-documented analyses suitable for academic and professional review.
 
 ## Major Projects & Assignments
 
 ### Unit 01: Introduction to Statistical Thinking
-- **Description:** Explored probability, sampling, and data visualization in R.
+- **Description:** Explored basic concepts in probability, sampling, and data visualization.
 - **Key Skills:** RMarkdown, data wrangling, exploratory data analysis.
 
 ### Unit 02: Probability and Distributions
-- **Description:** Applied probability theory and worked with statistical distributions.
+- **Description:** Applied probability theory and worked with common statistical distributions.
 - **Key Skills:** Probability calculations, simulation, visualization in R.
 
 ### Unit 03: Statistical Inference
@@ -49,18 +47,22 @@ This repository contains my coursework for UC Berkeley’s Data Science W203 (MI
 - **Description:** Synthesized course concepts in a comprehensive analysis project.
 - **Key Skills:** End-to-end data science workflow, reproducibility, presentation.
 
-## Technologies Used
-
+## Technologies & Tools
 - R, RMarkdown, ggplot2, dplyr
-- Git & GitHub
+- Git & GitHub for version control
 - PDF and HTML reporting
 
-## How to Run
-
-1. Clone the repository.
+## How to Reproduce Results
+1. Clone this repository.
 2. Install R and required packages (see individual `.Rmd` files for package lists).
-3. Open and knit RMarkdown files for each assignment.
-4. For reusable code, see the `src/` directory.
+3. Open any unit's `.Rmd` file in RStudio and knit to HTML or PDF.
 
-## Reflection
-This portfolio demonstrates my growth in statistical thinking, programming, and data analysis, and serves as a foundation for advanced data science coursework and real-world applications.
+## Best Practices Followed
+- Clean, modular code in `src/` for reusability.
+- All analyses are fully reproducible and documented.
+- No sensitive data or credentials are committed.
+- Folder structure supports scalability and clarity.
+
+---
+
+For questions or collaboration, please contact me via GitHub.
